@@ -53,7 +53,7 @@ grid.each do |row|
   puts row.map { |symbol| symbol.nil? ? ' ': symbol}.join(' ')
 end
 
-#Check if all panels are the sample
+#Check if all panels are the same
 if grid.flatten.uniq.compact.length == 1
   puts "Congratulations! You have won the game."
   break
